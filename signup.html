@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign up</title>
+</head>
+
+<body>
+    <h1>Sign up Now to the Hogwarts Coffee Shop</h1>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel -->
+    <form onsubmit="" target="_blank" method="post" autocomplete="on">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="fname" type="text" placeholder="Harry" />
+        </div>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="lname" type="text" placeholder="Potter" />
+        </div>
+       
+        <div>
+            <!-- ad patter -->
+            <label for="phone">Telephone</label> <input type="phone" type="tel" />
+        </div>
+         <!-- add input number -->
+         <div>
+            <label for="age">What is your age?</label><br>
+            <input type="number" id="age" name="age" required />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" type="email" placeholder="harry@gmail.com" />
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" type="password" />
+        </div>
+        <div>
+            <label for="level">What is your favourite coffee flavor</label>
+            <select name="level" id="level">
+                <option value="0">I am a Beginner</option>
+                <option value="1">I am a Intermediate</option>
+                <option value="2">I am a professional</option>
+            </select>
+        </div>
+        <div>
+            <label for="courses">Which Membership would you like</label>
+            <div>
+                <input type="radio" name="courses" value="platinum" id="platinum" />
+                <label for="platinum">I want Hogwarts  Platinum</label><br />
+                <input type="radio" name="courses" value="gold" id="gold" />
+                <label for="diamond">I want Hogwarts  Diamond</label>
+            </div>
+        </div>
+        <!-- checkbox=> select many input fields -->
+        <div>
+            <label for="reason">Why do you want to order Hogwarts coffee</label>
+            <div>
+                <input type="checkbox" id="love" name="reason" value="love" checked />
+                <label for="love">I love its falvour</label><br />
+                <input type="checkbox" id="community" name="reason" value="community" />
+                <label for="community">I like its smell</label><br />
+                <input type="checkbox" id="job" name="reason" value="job" />
+                <label for="job">Its is made up of pure beans</label><br />
+                <input type="checkbox" id="learn" name="reason" value="skills" />
+                <label for="learn">They have other delecious items apart from coffee</label>
+            </div>
+        </div>
+
+        
+
+        <!-- date time picker -->
+        <div>
+            <label for="datatime-local">What time will you come?</label><br>
+            <input type="datetime-local" id="time" name="time" required />
+        </div>
+
+       
+        <!-- your profile links -->
+        <div>
+            <label for="url">Enter an https:// URL: We like to know about our regular customers</label><br>
+            <input type="url" id="url" name="url" placeholder="http://example.com" pattern="https://.*" size="30"
+                required />
+        </div>
+
+        <!-- file picker input field -->
+        <div><input type="file" /></div>
+        <div>
+            <p>
+                <label>Select an option:
+                    <select>
+                        <optgroup label="Group 1">
+                            <option>Regular Coffee Consumer</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>Often Coffee consumers</option>
+                            <option>Road Trip Consumer</option>
+                        </optgroup>
+                        
+                    </select>
+                </label>
+            </p>
+        </div>
+
+        <!-- form control buttons -->
+        <div>
+            <button class="resetBtn" type="reset">
+                Reset
+            </button>
+            <button type="submit" >
+              <a href="index.html">Submit</a>
+            </button>
+        </div>
+        <div>
+           
+        </div>
+    </form>
+</body>
+
+</html>
